@@ -11,7 +11,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -20,31 +20,38 @@
   <main>
     <h2>Contact Me</h2>
 
-  <p>You can contact me directly at:</p>
-  <ul>
-    <li><strong>Name:</strong> Julia Koutsoukos</li>
-    <li><strong>Email:</strong> <a href="mailto:juliakoutsoukos14@gmail.com">juliakoutsoukos14@gmail.com</a></li>
-    <li><strong>Phone:</strong> (804) 297-1672</li>
-  </ul>
+    <p>You can reach me directly at:</p>
+    <ul>
+      <li><strong>Name:</strong> Julia Koutsoukos</li>
+      <li><strong>Email:</strong> <a href="mailto:juliakoutsoukos14@gmail.com">juliakoutsoukos14@gmail.com</a></li>
+      <li><strong>Phone:</strong> (804) 297-1672</li>
+    </ul>
 
-  <p>Or send a message using the form below:</p>
+    <p>Or send me a message using the form below:</p>
 
-  <form action="#" method="post">
-    <label for="name">Name:</label><br />
-    <input type="text" id="name" name="name" required><br /><br />
+    <form action="#" method="post">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required><br /><br />
 
-    <label for="email">Email:</label><br />
-    <input type="email" id="email" name="email" required><br /><br />
+      <label for="email">Email address:</label><br />
+      <input type="email" id="email" name="email" required><br /><br />
 
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+      <label for="reason">Reason for contact:</label><br />
+      <select id="reason" name="reason">
+        <option value="hi">Saying hi</option>
+        <option value="internship">Looking for an internship</option>
+        <option value="interview">Interested in an interview</option>
+      </select><br /><br />
 
-    <input type="submit" value="Send Message">
-  </form>
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+      <input type="submit" value="Send Message">
+    </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Blog</p>
+    <p>&copy; 2025 Julia Koutsoukos</p>
   </footer>
 </body>
 </html>
