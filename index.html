@@ -4,20 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Blog</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header class="header">
+  <h1>My Blog</h1>
+  <nav>
+    <ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
+ <main class="container">
+  <!-- Sidebar for layout -->
+  <aside class="sidebar">
+    <h3>About Me</h3>
+    <p>I'm Julia, an Information Science major at MSU. I love design, field hockey, and traveling.</p>
+    <img src="images/Msu.jpg" alt="Julia at MSU" class="float-img">
+    <p class="caption">Me at MSU campus</p>
+  </aside>
+
+  <!-- Main blog content -->
+  <section class="main-content">
     <article>
       <h2>My Experience at Michigan State</h2>
       <p><time datetime="2025-06-01">June 1, 2025</time> by Julia Koutsoukos</p>
@@ -61,15 +72,16 @@
     <section>
       <h2>Subscribe to My Newsletter</h2>
       <form action="#" method="post">
-        <label for="email">Email address:</label><br />
-        <input type="email" id="email" name="email" required><br /><br />
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required>
         <input type="submit" value="Subscribe">
       </form>
     </section>
-  </main>
+  </section>
+</main>
 
-  <footer>
-    <p>&copy; 2025 Julia Koutsoukos</p>
-  </footer>
+  <footer id="site-footer">
+  <p>&copy; 2025 Julia Koutsoukos</p>
+</footer>
 </body>
 </html>
