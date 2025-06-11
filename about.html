@@ -4,35 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>My Blog</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>About Julia Koutsoukos</h2>
-    <img src="images/julia.jpg" alt="Photo of Julia" width="300">
-    <p>
-      Hi! I'm Julia Koutsoukos, an Information Science major at Michigan State University. I'm currently focusing on the Human-Centered Design track because I'm passionate about creating thoughtful, user-friendly technologies.
-    </p>
-    <p>
-      Outside of class, I'm involved in the Field Hockey Club and the Broad Leadership Association. I enjoy working on web projects like this blog and learning new tools like HTML, CSS, and GitHub.
-    </p>
-    <h3>My Interests</h3>
-    <ul>
-      <li>Hot Yoga and Workouts</li>
-      <li>Outdoor activities like hiking</li>
-      <li>Design and creative outlets</li>
-    </ul>
+  <main class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Quick Facts</h3>
+      <ul>
+        <li>MSU Info Science Major</li>
+        <li>Human-Centered Design Track</li>
+        <li>Club Athlete & Leader</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="main-content">
+      <h2>About Julia Koutsoukos</h2>
+      <img src="images/julia.jpg" alt="Photo of Julia" class="float-img">
+      <p class="caption">Photo of Julia</p>
+      <p>
+        Hi! I'm Julia Koutsoukos, an Information Science major at Michigan State University. I'm currently focusing on the Human-Centered Design track because I'm passionate about creating thoughtful, user-friendly technologies.
+      </p>
+      <p>
+        Outside of class, I'm involved in the Field Hockey Club and the Broad Leadership Association. I enjoy working on web projects like this blog and learning new tools like HTML, CSS, and GitHub.
+      </p>
+
+      <h3>My Interests</h3>
+      <ul>
+        <li>Hot Yoga and Workouts</li>
+        <li>Outdoor activities like hiking</li>
+        <li>Design and creative outlets</li>
+      </ul>
+    </section>
   </main>
+
+  <footer id="site-footer">
+    <p>&copy; 2025 Julia Koutsoukos</p>
+  </footer>
+</body>
+</html>
 
   <footer>
     <p>&copy; 2025 Julia Koutsoukos</p>
